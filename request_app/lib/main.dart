@@ -12,7 +12,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  MyApp({Key? key});
   var storage = const FlutterSecureStorage();
   Future<String> get jwtOrEmpty async {
     var jwt = await storage.read(key: "Authorization");
